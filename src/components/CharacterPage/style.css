@@ -1,0 +1,178 @@
+.characterPage-component{
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #c30000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poke-dex{
+    position: absolute;
+    width: 90%;
+    height: 86%;
+    background-color: #d9d5c8;
+    border: 8px solid #767676;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.poke-btn{
+    top: 0px;
+    left: 5%;
+    position: absolute;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.poke-btn0{
+    width: 40px;
+    height: 40px;
+    background-image: radial-gradient(#058f9d, #1a6e76);
+    position: relative;
+    border-radius: 50px;
+    margin-right: 30px;
+    animation: 1s btnDex step-end infinite;
+    box-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+}
+.poke-btn1{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0505;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.poke-btn2{
+    width: 20px;
+    height: 20px;
+    background-color: #ffda05;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.poke-btn3{
+    width: 20px;
+    height: 20px;
+    background-color: #51ff00;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+@keyframes btnDex{
+    0%{
+        background-image: radial-gradient(#058f9d, #1a6e76);
+        box-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+    }
+    50%{
+        background-image: radial-gradient(#002842, #110030);
+        box-shadow:none
+    }
+    100%{
+        background-image: radial-gradient(#058f9d, #1a6e76);
+        box-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+    }
+}
+
+.dex-back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor:pointer
+}
+.dex-bax_img{
+    margin: 1rem;
+    filter: invert(1) brightness(0.9);
+    transition: .1s linear;
+}
+.dex-bax_img:hover{
+    filter: invert(1) brightness(1);
+}
+
+.poke-dex.poke-dex::-webkit-scrollbar{
+    background-color: #4eb41f00;
+    width: 10px;
+}
+.poke-dex.poke-dex::-webkit-scrollbar-track{
+    background-color: #646464;
+    border-radius: 50px;
+}
+.dex-containsImv{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.dev-logo{
+    width: 20%;
+    position: absolute;
+    top: 0;
+}
+.dex-pokemon{
+    width: 100%;
+    z-index: 100;
+}
+.dex-containsData{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dex-data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dex-pokeName{
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin: 1rem 0;
+    width: 100%;
+}
+.dev-subData{
+    width: 50%;
+}
+.subData-text{
+    font-size: 1.3rem;
+}
+.dex-caracter{
+    width: 50%;
+}
+.caracter-data{
+
+}
+.type-text{
+
+}

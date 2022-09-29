@@ -1,0 +1,12 @@
+.confugure-component{
+    position: fixed;
+    bottom: 4rem;
+    right: 100px;
+    background-color: #9f1f1f;
+    padding: 0.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.confugure-img{
+    filter: invert(1);
+}
